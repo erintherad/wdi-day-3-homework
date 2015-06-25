@@ -1,0 +1,24 @@
+var securityQuestions = [
+    {
+        question: "What is your mother's maiden name?",
+        expectedAnswer: "Rick"
+    },
+    {
+        question: "What is your favorite color?",
+        expectedAnswer: "Blue"
+    },
+    {
+        question: "What town did you grow up in?",
+        expectedAnswer: "Wilson" 
+    }
+    ];
+    
+var answer;    
+    
+for(var i = 0; i < securityQuestions.length; i++) {
+    answer = prompt(securityQuestions[i].question);
+    if(answer !== securityQuestions[i].expectedAnswer) {
+       alert("Wrong answer!");
+       break;
+    }
+}

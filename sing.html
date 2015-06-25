@@ -1,0 +1,20 @@
+
+var personAnswer = prompt("Please choose a numble of beer bottles!")
+
+var pluralize = function (numBottles){
+    if(numBottles > 1){
+        return numBottles + " bottles";
+    } else if (numBottles === 1) {
+        return numBottles + " bottle";
+    }  else if (numBottles < 1) {
+        return "No more bottles";
+    }
+}
+
+for(var bottlesBeer = personAnswer; bottlesBeer > 0; bottlesBeer--) {
+       console.log(pluralize(bottlesBeer) + " of Beer on the wall, ")
+       console.log(pluralize(bottlesBeer) + " of Beer! ") 
+       console.log( "Take one down and pass it around,")
+       console.log(pluralize(bottlesBeer-1) + " of Beer on the wall")
+       console.log(" ")
+}
